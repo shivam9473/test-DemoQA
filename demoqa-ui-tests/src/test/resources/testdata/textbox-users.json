@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Shivam Kumar",
+    "email": "shivam.test@example.com",
+    "currentAddress": "12 MG Road, Pune",
+    "permanentAddress": "45 Park Street, Kolkata"
+  },
+  {
+    "name": "Alex Rivera",
+    "email": "alex.qa@example.com",
+    "currentAddress": "100 Main St, Austin",
+    "permanentAddress": "100 Main St, Austin"
+  }
+]

@@ -1,0 +1,13 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+.cursor/
+AGENTS.md
+*.log
+**/allure-results/
+**/surefire-reports/
+.DS_Store

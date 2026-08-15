@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoQA Regression" parallel="false" verbose="1">
+  <listeners>
+    <listener class-name="com.sdet.framework.listeners.AllureListener"/>
+  </listeners>
+  <test name="Full regression">
+    <packages>
+      <package name="com.sdet.demoqa.tests"/>
+    </packages>
+  </test>
+</suite>

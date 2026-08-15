@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.sdet.advanced</groupId>
+  <artifactId>demoqa-advanced-automation</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>DemoQA Advanced Automation</name>
+  <description>Advanced SDET framework — DemoQA UI, Restful Booker API, parallel TestNG, Allure, Docker Grid, CI/CD</description>
+
+  <modules>
+    <module>framework-core</module>
+    <module>demoqa-ui-tests</module>
+    <module>booker-api-tests</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+    <selenium.version>4.31.0</selenium.version>
+    <testng.version>7.10.2</testng.version>
+    <restassured.version>5.5.0</restassured.version>
+    <allure.version>2.29.0</allure.version>
+    <jackson.version>2.18.2</jackson.version>
+    <webdrivermanager.version>5.9.2</webdrivermanager.version>
+    <surefire.version>3.5.2</surefire.version>
+    <aspectj.version>1.9.22.1</aspectj.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.sdet.advanced</groupId>
+        <artifactId>framework-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoQA Smoke" parallel="false" verbose="1">
+  <listeners>
+    <listener class-name="com.sdet.framework.listeners.AllureListener"/>
+  </listeners>
+  <test name="Smoke">
+    <classes>
+      <class name="com.sdet.demoqa.tests.TextBoxTest"/>
+      <class name="com.sdet.demoqa.tests.AlertsTest">
+        <methods>
+          <include name="acceptJavaScriptAlert"/>
+          <include name="acceptConfirmDialog"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

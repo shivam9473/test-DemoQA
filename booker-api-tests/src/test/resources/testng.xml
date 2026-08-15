@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Restful Booker API" parallel="false" verbose="1">
+  <test name="Booking lifecycle">
+    <classes>
+      <class name="com.sdet.booker.tests.BookingLifecycleTest"/>
+    </classes>
+  </test>
+</suite>
